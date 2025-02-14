@@ -1,0 +1,141 @@
+/* Сброс стилей браузера для более консистентного отображения */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Убирает проблемы с размерами элементов */
+}
+
+/* Основной стиль для body */
+body {
+    font-family: 'Arial', sans-serif; /* Шрифт по умолчанию */
+    background-color: #f4f4f4; /* Светлый фон страницы */
+    color: #333; /* Темный текст для контраста */
+    line-height: 1.6; /* Увеличиваем межстрочный интервал для удобочитаемости */
+    padding: 20px;
+}
+
+/* Стили для header */
+header {
+    background-color: #333; /* Темный фон для шапки */
+    color: white; /* Белый текст */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    text-align: center; /* Центрируем текст */
+}
+
+/* Стили для заголовка в header */
+header h1 {
+    font-size: 24px; /* Размер шрифта для заголовка */
+}
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    display: flex; /* Выстраиваем элементы меню в строку */
+    justify-content: center; /* Центрируем меню по горизонтали */
+    margin-top: 10px;
+}
+
+nav li {
+    margin: 0 15px; /* Отступы между элементами меню */
+}
+
+nav a {
+    color: white; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Стили для секции "Обо мне" */
+#about-me {
+    background-color: #fff; /* Белый фон */
+    padding: 20px;
+    border-radius: 8px; /* Сглаженные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для эффекта глубины */
+    margin: 20px 0;
+}
+
+#about-me h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#about-me p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#skills {
+    clear: both; /* Очищаем обтекание, чтобы текст не перекрывал изображение */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.float-image {
+    float: left; /* Размещение изображения слева */
+    margin-right: 15px; /* Добавляем отступ справа от изображения, чтобы текст не прилипал к картинке */
+    margin-bottom: 10px; /* Отступ снизу для корректного отображения текста */
+}
+
+/* Стили для секции "Мои навыки" */
+#skills {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#skills h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#skills ul {
+    padding-left: 20px;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+#skills strong {
+    color: #333;
+}
+
+/* Стили для aside */
+aside {
+    background-color: #f9f9f9; /* Светлый фон для дополнительной информации */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+aside h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #333; /* Темный фон для подвала */
+    color: white; /* Белый текст */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-radius: 8px; /* Сглаженные углы */
+}
