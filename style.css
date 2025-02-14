@@ -68,23 +68,11 @@ nav a:hover {
     line-height: 1.8;
 }
 
+/* Используем Flexbox для секции "Мои навыки" */
 #skills {
-    clear: both; /* Очищаем обтекание, чтобы текст не перекрывал изображение */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-}
-
-.float-image {
-    float: left; /* Размещение изображения слева */
-    margin-right: 15px; /* Добавляем отступ справа от изображения, чтобы текст не прилипал к картинке */
-    margin-bottom: 10px; /* Отступ снизу для корректного отображения текста */
-}
-
-/* Стили для секции "Мои навыки" */
-#skills {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем элементам переноситься на новую строку */
+    justify-content: space-between; /* Равномерное распределение элементов по строкам */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -95,10 +83,12 @@ nav a:hover {
 #skills h2 {
     font-size: 22px;
     margin-bottom: 10px;
+    width: 100%; /* Заголовок на всю ширину */
 }
 
 #skills ul {
     padding-left: 20px;
+    width: 48%; /* Уменьшаем ширину списков, чтобы они могли располагаться рядом */
 }
 
 #skills li {
@@ -109,7 +99,22 @@ nav a:hover {
     color: #333;
 }
 
-/* Стили для aside */
+/* Стили для .float-image */
+.float-image {
+    display: flex; /* Используем flexbox */
+    justify-content: center; /* Выравниваем изображение по центру */
+    align-items: center; /* Вертикальное выравнивание */
+    width: 50%; /* Ограничиваем ширину изображения */
+    margin-right: 20px; /* Отступ справа */
+    margin-bottom: 20px; /* Отступ снизу для предотвращения слипшихся элементов */
+}
+
+.float-image img {
+    max-width: 100%; /* Изображение не выходит за пределы блока */
+    height: auto; /* Сохраняем пропорции */
+}
+
+/* Стили для секции "Дополнительная информация" */
 aside {
     background-color: #f9f9f9; /* Светлый фон для дополнительной информации */
     padding: 10px;
